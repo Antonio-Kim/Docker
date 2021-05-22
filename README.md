@@ -45,3 +45,4 @@ docker push <username>/<repository>
 
 ## Some interesting notes
 - A volume is simply a folder (or a file) that is shared between the host machine and the container. You can set the execution to be done in host by adding __-v__ and the directory you wish to be set on __docker run__ 
+- What is the difference between __CMD__ and __ENTRYPOINT__? https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile
