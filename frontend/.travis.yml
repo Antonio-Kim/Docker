@@ -8,4 +8,3 @@ before_install:
 script:
   - docker run -e CI=true antoniok/frontend npm run test -- --coverage
 
-language: generic
