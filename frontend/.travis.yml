@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t antoniok/frontend -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true antoniok/frontend npm run test -- --coverage
+
+language: generic
